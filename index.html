@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E&Y - Mariage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#info">Informations</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+        <li><a href="#oùdormir">Où dormir</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+        <img src="Mon Logo.png" alt="Logo">
+    </div>
+  </header>
+
+  <!-- Image à faire bouger -->
+</div>
+
+<section>
+    <div class="fond1">
+        <img src="Fond 1.jpg" alt="Fond1">
+    </div>
+</section>
+
+  <section id="hero">
+    <div class="hero-content">
+    <h1> 05. 07. 2025</h1>
+    <h2>ELISE & YOHANN </h2>
+    </div>
+  </section>
+
+  <section id="info">
+    <div class="container">
+      <h2>Informations</h2>
+      <!-- Ajoutez ici les informations sur le mariage -->
+    </div>
+  </section>
+
+  <section id="rsvp">
+    <div class="container">
+      <h2>RSVP</h2>
+      <form action="traitement_rsvp.php" method="post">
+        <input type="hidden" name="destinataire" value="elise.yohann.barbat@outlook.com"> <!-- Champ caché pour l'adresse e-mail du destinataire -->
+        <label for="name">Nom:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="name">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="attend">Serez-vous présent?</label><br>
+        <input type="radio" id="yes" name="attend" value="yes" required>
+        <label for="yes">Oui</label>
+        <input type="radio" id="no" name="attend" value="no" required>
+        <label for="no">Non</label><br>
+        
+        <input type="submit" value="Envoyer">
+      </form>
+    </div>
+  </section>
+
+  <section id="oùdormir">
+    <div class="container">
+      <h2>Où dormir</h2>
+      <!-- Galerie de photos -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 05.07.2025 Mariage de Elise & Yohann. Made with Love.</p>
+  </footer>
+
+
+
+</body>
+</html>
